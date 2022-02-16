@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form class="durger__selection">
+        <h1>Собери свой бургер</h1>
+
+    <div class="burger__section">
+            <span class="burger__subtitle"> выберите размер</span>
+            <select class="selectionBurgerSize" name="hamdurger-size" id="hamdurgerSize">
+                <option value="big">Большой (100 рублей, 40 калорий)</option>
+                <option value="small" >Маленький  (50 рублей, 20 калорий)</option>
+            </select>
+    </div>
+    <div class="burger__section">
+        <span class="burger__subtitle">Выберите начинку </span>
+        <label>
+            <span class="burger-chease">с сыром (+10 рублей, +20 калорий)</span>
+            <input  class="burger-inner" type="radio" name="size" value="cheese" checked>
+        </label>
+        <label>
+            <span>С Салатом (+20 рублей, +5 калорий)</span>
+            <input class="burger-inner" type="radio" name="size" value ='salad'>
+        </label>
+        <label>
+            <span>с картофелем (+15 рублей, +10 калорий)</span>
+            <input class="burger-inner" type="radio" name="size" value="potato" >
+        </label>
+    </div>
+    <div class="burger__section">
+        <span class="burger__subtitle">Дополнительные топппинги</span>
+        <label>
+            <span>посыпать приправой (+15 рублей, +0 калорий)</span>
+            <input checked class="burger-seasoning" type="checkbox"  value="seasoning">
+        </label>
+        <label>
+            <span>Полить майонезом  (+20 рублей, +5 калорий)</span>
+            <input class="burger-mayonnaise" type="checkbox"  value="mayonnaise">
+        </label>
+    </div>
+    <div class="burger__section">
+        <span class="burger__price">Цена</span>
+        <span class="price"></span>
+        <span class="burger__calories">Калории</span>
+        <span class="calories"></span>
+    </div>
+   <button type="submit" class="buttonSubmit">Расчитать бургер</button>
+    </form>
+    
+<script src="public/js/scriptHamburger.js"></script>
+</body>
+</html>
