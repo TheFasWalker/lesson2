@@ -1,3 +1,4 @@
+
 class ProductList {
     constructor(container = '.products'){
         this._container = document.querySelector(container); //расположение контейнера - куда будем рендерить данные
